@@ -49,8 +49,10 @@ if __name__=='__main__':
     data_y = f_l[-len(f_r)+1:]
     print(data_x.shape)
     print(data_y.shape)
-    np.savetxt('data/data_x.txt',data_x.reshape((len(data_x)*day*pow(2, n)*3,)))
+    np.savetxt('data/data_x.txt',data_x.reshape((len(data_x), day*pow(2, n)*3,)))
+    #(6822,34,32,3)
     np.savetxt('data/data_y.txt',data_y)
+    #(6822,2)
 
 
 
